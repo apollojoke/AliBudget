@@ -1,0 +1,41 @@
+#header{
+    height: 85px;
+}
+
+#header .container-fluid{
+    width: 1200px;
+}
+.navbar-brand{
+    width: 200px;
+}
+.logo-slogan{
+    margin-top: 3px;
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    font-size: 11px;
+    color: #999;
+}
+.navbar-collapse{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.form-control{
+    margin-left: 70px;
+    width: 600px !important;
+}
+#first-promotion{
+    background-image: url("/img/example.jpg");
+    height: 400px;
+    display: inline-block;
+    width: 750px;
+    margin-left: 65px;
+}
+#promotions{
+    margin-top: 10px;
+}
+#promotions p a{
+    display: inline-block;
+    width: 200px;
+    margin: 5px 25px 10px;
+}
