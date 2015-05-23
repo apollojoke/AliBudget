@@ -2,20 +2,12 @@
 
     <nav class="navbar navbar-default" id="header">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
                 <a class="navbar-brand" href="#">
                     <span><img alt="AliFastShopping" src="/img/logo-new-1x.png"></span>
                     <span class="logo-slogan">Smarter Shopping, Better Living!</span>
                 </a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -58,7 +50,7 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="container">
+    <div class="container" id="container">
         <div class="row">
             <div class="col-sm-3" id="sidebar" role="navigation">
                 <div class="list-group">
@@ -94,8 +86,33 @@
                 </div>
             </div>
             <div class="col-sm-9">
-                <a class="row" id="first-promotion" href="#">
-                </a>
+                <!--My carousel-->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="http://www.baidu.com"><img class="first-slide" src="/img/example.jpg" alt="First slide"></a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img class="second-slide" src="/img/example2.jpg" alt="Second slide"></a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img class="third-slide" src="/img/example3.jpg" alt="Third slide"></a>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div><!--/My carousel-->
                 <div class="row" id="promotions">
                     <div class="col-6 col-sm-6 col-lg-4">
                         <a href="http://s.click.aliexpress.com/e/UrrnQRzbq?bz=300*250" target="_parent"><img width="250" height="210" src="http://g01.a.alicdn.com/kf/HTB1RLPnGVXXXXbaaXXXq6xXFXXXx/300x250.jpg"/></a>
