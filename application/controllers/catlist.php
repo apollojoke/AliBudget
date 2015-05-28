@@ -8,7 +8,7 @@
 
 class catlist extends MpController{
 
-    public function doIndex($catId='shoes', $pageNo=1) {
+    public function doIndex($catId='36', $pageNo=1) {
         $ref="http://www.alibudget.com/";
         $api_url="http://gw.api.alibaba.com/openapi/param2/1/portals.open/api.listPromotionProduct/61724";
 
