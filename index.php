@@ -39,7 +39,7 @@ define('WDS', DIRECTORY_SEPARATOR);
  * 如果开启了URL Rewrite 功能，请在这里设置为TRUE，没有开启请设置为FALSE
  * 该配置会影响url()函数生成的链接
  */
-$system['url_rewrite'] = FALSE;
+$system['url_rewrite'] = TRUE;
 /**
  * 程序文件夹路径名称，也就是所有的程序文件比如控制器文件夹，
  * 模型文件夹，视图文件夹等所在的文件夹名称。
@@ -161,7 +161,7 @@ $system['my_loader'] = '';
  * 自动加载的helper文件,比如:array($item);
  * $item是helper文件名,不包含后缀,比如: html 等.
  */
-$system['helper_file_autoload'] = array();
+$system['helper_file_autoload'] = array('simple_html_dom');
 /**
  * 自动加载的library文件,比如array($item);
  * $item是library文件名或者"配置数组",不包含后缀,

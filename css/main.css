@@ -24,12 +24,6 @@
     margin-left: 70px;
     width: 600px !important;
 }
-#first-promotion{
-    background-image: url("/img/example.jpg");
-    height: 400px;
-    display: inline-block;
-    width: 750px;
-}
 #promotions{
     margin-top: 10px;
 }
@@ -43,7 +37,9 @@
     margin-left: 100px;
     margin-right: 100px;
 }
+
 #myCarousel{
     display: inline-block;
     width: 750px;
+    height: 400px;
 }
