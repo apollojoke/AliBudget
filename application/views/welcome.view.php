@@ -1,55 +1,4 @@
 <?php include($this->view_path('common/header'));?>
-
-    <nav class="navbar navbar-default" id="header">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <span><img alt="AliFastShopping" src="/img/logo-new-1x.png"></span>
-                    <span class="logo-slogan">Smarter Shopping, Better Living!</span>
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-<!--                    <li class="dropdown">-->
-<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
-<!--                        <ul class="dropdown-menu" role="menu">-->
-<!--                            <li><a href="#">Action</a></li>-->
-<!--                            <li><a href="#">Another action</a></li>-->
-<!--                            <li><a href="#">Something else here</a></li>-->
-<!--                            <li class="divider"></li>-->
-<!--                            <li><a href="#">Separated link</a></li>-->
-<!--                            <li class="divider"></li>-->
-<!--                            <li><a href="#">One more separated link</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-                </ul>
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="I'm shopping for...">
-                    </div>
-                    <button type="submit" class="btn btn-default">GO!</button>
-                </form>
-<!--                <ul class="nav navbar-nav navbar-right">-->
-<!--                    <li><a href="#">Link</a></li>-->
-<!--                    <li class="dropdown">-->
-<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
-<!--                        <ul class="dropdown-menu" role="menu">-->
-<!--                            <li><a href="#">Action</a></li>-->
-<!--                            <li><a href="#">Another action</a></li>-->
-<!--                            <li><a href="#">Something else here</a></li>-->
-<!--                            <li class="divider"></li>-->
-<!--                            <li><a href="#">Separated link</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                </ul>-->
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
     <div class="container" id="container">
         <div class="row">
             <div class="col-sm-3" id="sidebar" role="navigation">
@@ -90,8 +39,8 @@
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+<!--                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+                        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="2" class=""></li>
                         <li data-target="#myCarousel" data-slide-to="3" class=""></li>
                         <li data-target="#myCarousel" data-slide-to="4" class=""></li>
@@ -99,10 +48,10 @@
                     </ol>
 
                     <div class="carousel-inner" role="listbox">
+<!--                        <div class="item active">-->
+<!--                            <a href="--><?php //echo $promotionUrls[0]->promotionUrl?><!--"><img class="first-slide" src="--><?php //echo $imgs[0]?><!--" alt="First slide"></a>-->
+<!--                        </div>-->
                         <div class="item active">
-                            <a href="<?php echo $promotionUrls[0]->promotionUrl?>"><img class="first-slide" src="<?php echo $imgs[0]?>" alt="First slide"></a>
-                        </div>
-                        <div class="item">
                             <a href="<?php echo $promotionUrls[1]->promotionUrl?>"><img class="second-slide" src="<?php echo $imgs[1]?>" alt="Second slide"></a>
                         </div>
                         <div class="item">
@@ -165,7 +114,6 @@
                     <div class="col-6 col-sm-6 col-lg-4">
                         <a href="http://s.click.aliexpress.com/e/YFE2bAQNZ?bz=300*250" target="_parent"><img width="250" height="210"src="http://g01.a.alicdn.com/kf/HTB1ukuWGXXXXXXEapXXq6xXFXXXn/300x250.jpg"/></a>
                         <p><a class="btn btn-default" href="http://s.click.aliexpress.com/e/Z3nUFy3Vv" target="_parent">Shoes channel</a></p>
-<!--                        <p><a class="btn btn-default" href="http://s.click.aliexpress.com/e/nunq7Iuf2?bz=300*250" role="button">View details »</a></p>-->
                     </div><!--/span-->
                 </div>
             </div>
