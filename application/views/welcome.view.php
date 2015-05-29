@@ -117,10 +117,4 @@
             </div>
         </div>
     </div>
-
-    <hr/>
-
-    <footer>
-        <p>&copy; Jun Lee 2015  </p>
-    </footer>
 <?php include($this->view_path('common/footer'));?>
