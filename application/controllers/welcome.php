@@ -6,7 +6,7 @@ class Welcome extends MpController {
         $html = file_get_html('http://www.aliexpress.com/');
         $urls = array();
         $imgs = array();
-            foreach($html->find('.ui-banner-slider-slider') as $element){
+        foreach($html->find('.ui-banner-slider-slider') as $element){
             foreach($element->children() as $ele){
                 array_push($urls,$ele->children(0)->href);
                 array_push($imgs,$ele->children(0)->children(0)->src);

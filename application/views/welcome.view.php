@@ -39,33 +39,31 @@
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
                     <ol class="carousel-indicators">
-<!--                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
-                        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+                        <?php
+                            for($i=1;$i<count($promotionUrls);$i++){
+                                if($i==1){
+                        ?>
+                            <li data-target="#myCarousel" data-slide-to="<?php echo $i?>" class="active"></li>
+                        <?php }else{ ?>
+                            <li data-target="#myCarousel" data-slide-to="<?php echo $i?>"></li>
+                        <?php }} ?>
                     </ol>
 
                     <div class="carousel-inner" role="listbox">
-<!--                        <div class="item active">-->
-<!--                            <a href="--><?php //echo $promotionUrls[0]->promotionUrl?><!--"><img class="first-slide" src="--><?php //echo $imgs[0]?><!--" alt="First slide"></a>-->
-<!--                        </div>-->
-                        <div class="item active">
-                            <a href="<?php echo $promotionUrls[1]->promotionUrl?>"><img class="second-slide" src="<?php echo $imgs[1]?>" alt="Second slide"></a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo $promotionUrls[2]->promotionUrl?>"><img class="third-slide" src="<?php echo $imgs[2]?>" alt="Third slide"></a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo $promotionUrls[3]->promotionUrl?>"><img class="forth-slide" src="<?php echo $imgs[3]?>" alt="Forth slide"></a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo $promotionUrls[4]->promotionUrl?>"><img class="fifth-slide" src="<?php echo $imgs[4]?>" alt="Fifth slide"></a>
-                        </div>
-                        <div class="item">
-                            <a href="<?php echo $promotionUrls[5]->promotionUrl?>"><img class="sixth-slide" src="<?php echo $imgs[5]?>" alt="Sixth slide"></a>
-                        </div>
+                        <?php
+                            for($i=1;$i<count($promotionUrls);$i++){
+                                $promotionUrl = $promotionUrls[$i]->promotionUrl;
+                                $imgUrl = $imgs[$i];
+                                if($i==1){
+                        ?>
+                                    <div class="item active">
+                                        <a href="<?php echo $promotionUrl?>"><img src="<?php echo $imgUrl?>" alt="slide"></a>
+                                    </div>
+                        <?php }else{ ?>
+                                    <div class="item">
+                                        <a href="<?php echo $promotionUrl?>"><img src="<?php echo $imgUrl?>" alt="slide"></a>
+                                    </div>
+                        <?php }} ?>
                     </div>
 
                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">

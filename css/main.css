@@ -21,7 +21,7 @@
     margin-top: 15px;
 }
 .form-control{
-    margin-left: 70px;
+    margin-left: -2px;
     width: 600px !important;
 }
 #promotions{
@@ -53,4 +53,8 @@
     background: url(../img/404_notice.png) no-repeat;
     MARGIN-RIGHT: auto;
     MARGIN-LEFT: auto;
+}
+.coupon-link {
+    color: orange !important;
+    font-weight: bold;
 }
