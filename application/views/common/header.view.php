@@ -6,7 +6,15 @@ if (!defined('IN_WONIU_APP')) {
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>AliBudget</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AliBudget -  Online Shopping for Electronics, Fashion, Home & Garden, Toys & Sports, Automobiles from China.</title>
+        <meta name="keywords" content="AliBudget, Online shopping, Shopping Online, Online Marketing, Automotive, Phones, Accessories, Computers, Electronics, Fashion, Beauty, Health, Home, Garden, Toys , Sports, Weddings, Events" />
+        <meta name="description" content="Online Shopping for Cheap Automotive, Phones Accessories, Computers Electronics, Fashion, Beauty Health, Home Garden, Toys Sports, Weddings Events from China; Shopping on AliBudget |the world's Online Marketing place." />
+        <meta property="og:title" content="Find Quality Wholesalers, Suppliers, Manufacturers, Buyers and Products from Our Award-Winning International Trade Site. Wholesale Products from China Wholesalers at alibudget.com."/>
+        <meta property="og:type" content="site" />
+        <meta property="og:url" content="http://www.alibudget.com/" />
+        <meta property="og:image" content="http://img.alibaba.com/images/cms/upload/aliexpress/social/facebook/aliexpress_fb_ogp.png" />
+        <meta property="og:site_name" content="AliBudget"/>
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <link href="/css/main.css" rel="stylesheet">
         <script src="/js/jquery-1.11.1.min.js"></script>
