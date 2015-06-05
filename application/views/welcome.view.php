@@ -1,4 +1,35 @@
 <?php include($this->view_path('common/header'));?>
+
+<title>AliBudget -  Online Shopping for Electronics, Fashion, Home & Garden, Toys & Sports, Automobiles from China.</title>
+<meta name="keywords" content="AliBudget, Online shopping, Shopping Online, Online Marketing, Automotive, Phones, Accessories, Computers, Electronics, Fashion, Beauty, Health, Home, Garden, Toys , Sports, Weddings, Events" />
+        <meta name="description" content="Online Shopping for Cheap Automotive, Phones Accessories, Computers Electronics, Fashion, Beauty Health, Home Garden, Toys Sports, Weddings Events from China; Shopping on AliBudget |the world's Online Marketing place." />
+
+</head>
+<body>
+    <nav class="navbar navbar-default" id="header">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <span><img alt="AliBudget" src="/img/logo-new-1x.png"></span>
+                    <span class="logo-slogan">Smarter Shopping, Better Living!</span>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/coupon.index" class="coupon-link">Coupon</a></li>
+                    <li><a href="http://s.click.aliexpress.com/e/AE2vNniqJ">Buyer Protection</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search" method="post" action="/catlist.index">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="keywords" placeholder="I'm shopping for...">
+                    </div>
+                    <button type="submit" class="btn btn-default">GO!</button>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
     <div class="container" id="container">
         <div class="row">
             <div class="col-sm-3" id="sidebar" role="navigation">
