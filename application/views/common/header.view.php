@@ -19,6 +19,16 @@ if (!defined('IN_WONIU_APP')) {
         <link href="/css/main.css" rel="stylesheet">
         <script src="/js/jquery-1.11.1.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-63792770-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
         </head>
     <body>
         <nav class="navbar navbar-default" id="header">
@@ -33,7 +43,7 @@ if (!defined('IN_WONIU_APP')) {
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/index.php/coupon.index" class="coupon-link">Coupon</a></li>
+                        <li><a href="/coupon.index" class="coupon-link">Coupon</a></li>
                         <li><a href="http://s.click.aliexpress.com/e/AE2vNniqJ">Buyer Protection</a></li>
                         <!--                    <li class="dropdown">-->
                         <!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
@@ -48,7 +58,7 @@ if (!defined('IN_WONIU_APP')) {
                         <!--                        </ul>-->
                         <!--                    </li>-->
                     </ul>
-                    <form class="navbar-form navbar-left" role="search" method="post" action="/index.php/catlist.index">
+                    <form class="navbar-form navbar-left" role="search" method="post" action="/catlist.index">
                         <div class="form-group">
                             <input type="text" class="form-control" name="keywords" placeholder="I'm shopping for...">
                         </div>

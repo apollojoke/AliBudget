@@ -31,15 +31,15 @@
         <?php } ?>
         <div class="center-block">
             <ul class="pagination pagination-lg" style="margin-left: 28%"><!-- style="display: table;margin-left: auto;margin-right: auto" -->
-                <li class="<?php if($pre<=0) echo 'disabled'?>"><a href="/index.php/catlist.index/<?php echo $catId.'/'.($pre<=0?1:$pre)?>">&laquo;</a></li>
-                <li class="previous <?php if($pageNo-1<=0) echo 'disabled'?>"><a href="/index.php/catlist.index/<?php echo $catId.'/'.(($pageNo-1)<=0?1:($pageNo-1))?>">&larr; Older</a></li>
-                <li <?php if($pageNo==$one)echo 'class="active"'?>><a href="/index.php/catlist.index/<?php echo $catId.'/'.$one?>"><?php echo $one?></a></li>
-                <li <?php if($pageNo==$two)echo 'class="active"'?>><a href="/index.php/catlist.index/<?php echo $catId.'/'.$two?>"><?php echo $two?></a></li>
-                <li <?php if($pageNo==$three)echo 'class="active"'?>><a href="/index.php/catlist.index/<?php echo $catId.'/'.$three?>"><?php echo $three?></a></li>
-                <li <?php if($pageNo==$four)echo 'class="active"'?>><a href="/index.php/catlist.index/<?php echo $catId.'/'.$four?>"><?php echo $four?></a></li>
-                <li <?php if($pageNo==$five)echo 'class="active"'?>><a href="/index.php/catlist.index/<?php echo $catId.'/'.$five?>"><?php echo $five?></a></li>
-                <li class="next"><a href="/index.php/catlist.index/<?php echo $catId.'/'.($pageNo+1)?>">Newer &rarr;</a></li>
-                <li><a href="/index.php/catlist.index/<?php echo $catId.'/'.$next?>">&raquo;</a></li>
+                <li class="<?php if($pre<=0) echo 'disabled'?>"><a href="/catlist.index/<?php echo $catId.'/'.($pre<=0?1:$pre)?>">&laquo;</a></li>
+                <li class="previous <?php if($pageNo-1<=0) echo 'disabled'?>"><a href="/catlist.index/<?php echo $catId.'/'.(($pageNo-1)<=0?1:($pageNo-1))?>">&larr; Older</a></li>
+                <li <?php if($pageNo==$one)echo 'class="active"'?>><a href="/catlist.index/<?php echo $catId.'/'.$one?>"><?php echo $one?></a></li>
+                <li <?php if($pageNo==$two)echo 'class="active"'?>><a href="/catlist.index/<?php echo $catId.'/'.$two?>"><?php echo $two?></a></li>
+                <li <?php if($pageNo==$three)echo 'class="active"'?>><a href="/catlist.index/<?php echo $catId.'/'.$three?>"><?php echo $three?></a></li>
+                <li <?php if($pageNo==$four)echo 'class="active"'?>><a href="/catlist.index/<?php echo $catId.'/'.$four?>"><?php echo $four?></a></li>
+                <li <?php if($pageNo==$five)echo 'class="active"'?>><a href="/catlist.index/<?php echo $catId.'/'.$five?>"><?php echo $five?></a></li>
+                <li class="next"><a href="/catlist.index/<?php echo $catId.'/'.($pageNo+1)?>">Newer &rarr;</a></li>
+                <li><a href="/catlist.index/<?php echo $catId.'/'.$next?>">&raquo;</a></li>
             </ul>
         </div>
     </div>
