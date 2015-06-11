@@ -36,7 +36,7 @@ class Coupon extends MpController
             $item->href = $url->promotionUrl;
         }
 //        var_dump($lis);
-        $viewData=array('items'=>$lis,'title'=>"alibudget.com - Online Shopping for Electronics, Fashion, Home &amp; Garden, Toys &amp; Sports, Automobiles from China.",
+        $viewData=array('items'=>$lis,'title'=>"Alibudget.com - Online Shopping for Electronics, Fashion, Home &amp; Garden, Toys &amp; Sports, Automobiles from China.",
             'keywords'=>"AliBudget, Online shopping, Shopping Online, Online Marketing, Automotive, Phones, Accessories, Computers, Electronics, Fashion, Beauty, Health, Home, Garden, Toys , Sports, Weddings, Events",
             'description'=>"Online Shopping for Cheap Automotive, Phones Accessories, Computers Electronics, Fashion, Beauty Health, Home Garden, Toys Sports, Weddings Events from China; Shopping on AliBudget |the world's Online Marketing place.");
         $this->view('coupon',$viewData);
