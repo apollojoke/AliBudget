@@ -25,7 +25,7 @@ class Coupon extends MpController
         $data['trackingId'] = "apollojoke";
         $data['fields'] = "url,promotionUrl";
         $data['urls'] = join(",",$urls);
-        $ref="http://www.aliexprice.com/";
+        $ref="http://www.alibudget.com/";
         $result=$http->setReferer($ref)->post($api_url, $data);
 //        echo $result;
         $result_object=json_decode($result);
@@ -38,7 +38,7 @@ class Coupon extends MpController
 //        var_dump($lis);
         $viewData=array('items'=>$lis,'title'=>"alibudget.com - Online Shopping for Electronics, Fashion, Home &amp; Garden, Toys &amp; Sports, Automobiles from China.",
             'keywords'=>"AliBudget, Online shopping, Shopping Online, Online Marketing, Automotive, Phones, Accessories, Computers, Electronics, Fashion, Beauty, Health, Home, Garden, Toys , Sports, Weddings, Events",
-            'description'=>"Online Shopping for Cheap Automotive, Phones Accessories, Computers Electronics, Fashion, Beauty Health, Home Garden, Toys Sports, Weddings Events from China; Shopping on Aliexprice |the world's Online Marketing place.");
+            'description'=>"Online Shopping for Cheap Automotive, Phones Accessories, Computers Electronics, Fashion, Beauty Health, Home Garden, Toys Sports, Weddings Events from China; Shopping on AliBudget |the world's Online Marketing place.");
         $this->view('coupon',$viewData);
     }
 }

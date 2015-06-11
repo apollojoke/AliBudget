@@ -1,8 +1,9 @@
 <?php include($this->view_path('common/header'));?>
 
-<title>AliBudget -  Online Shopping for Electronics, Fashion, Home & Garden, Toys & Sports, Automobiles from China.</title>
-<meta name="keywords" content="AliBudget, Online shopping, Shopping Online, Online Marketing, Automotive, Phones, Accessories, Computers, Electronics, Fashion, Beauty, Health, Home, Garden, Toys , Sports, Weddings, Events" />
-<meta name="description" content="Online Shopping for Cheap Automotive, Phones Accessories, Computers Electronics, Fashion, Beauty Health, Home Garden, Toys Sports, Weddings Events from China; Shopping on AliBudget |the world's Online Marketing place." />
+<title><?php echo $catName.' and more on Alibudget.com' ?></title>
+<meta name="keywords" content="<?php echo $catName.',Online Shopping '.$catName ?>" />
+<meta name="description" content="<?php echo $catName.' and more from Alibudget.com, Factory Price, Worldwide Shipping!' ?>" />
+
 </head>
 <body>
 <nav class="navbar navbar-default" id="header">
@@ -42,11 +43,12 @@
             $packageType=$item->packageType;
             $salePrice=substr($item->salePrice,4);
             $price=$salePrice*$item->lotNum;
+            $productId=$item->productId;
             setlocale(LC_MONETARY, "en_US");
             ?>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" style="height: 480px">
-                    <img style="height: 340px" src='<?php echo $imgUrl ?>'>
+                    <a href="/product.index/<?php echo $productId ?>" target="_self"><img style="height: 340px" src='<?php echo $imgUrl ?>'></a>
                     <div class="caption">
                         <p><?php echo $item->subject ?></p>
                         <p>
