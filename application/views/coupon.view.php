@@ -115,4 +115,4 @@
     </div>
 
 
-<?php include($this->view_path('common/footer')); ?>his->view_path('common/footer'));?>
+<?php include($this->view_path('common/footer')); ?>
